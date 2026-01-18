@@ -12,9 +12,10 @@ app.use(express.json());
 
 
 // app.get("/", (req, res) => {
+//   console.log(req.body);
 //   res.send("Portfolio Contact API is running");
 // });
-app.use("/api/contact//", contactRoute);
+app.use("/api/contact/", contactRoute);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
