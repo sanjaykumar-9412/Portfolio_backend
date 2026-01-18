@@ -11,10 +11,10 @@ app.use(cors());
 app.use(express.json());
 
 
-app.get("/", (req, res) => {
-  res.send("Portfolio Contact API is running");
-});
-app.use("/api/contact", contactRoute);
+// app.get("/", (req, res) => {
+//   res.send("Portfolio Contact API is running");
+// });
+app.use("/api/contact//", contactRoute);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port ${process.env.PORT}`);
