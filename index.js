@@ -7,7 +7,10 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "*", // or your frontend URL
+}));
+
 app.use(express.json());
 
 
